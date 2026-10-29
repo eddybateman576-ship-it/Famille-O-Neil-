@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O'Neil Family | Recrutement</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">O'NEIL <span>FAMILY</span></a>
+    <nav class="navigation">
+      <a href="index.html">Accueil</a>
+      <a href="famille.html">La famille</a>
+      <a href="hierarchie.html">Hiérarchie</a>
+      <a class="active" href="recrutement.html">Recrutement</a>
+      <a href="actualites.html">Actualités</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <p class="eyebrow">RECRUTEMENT OUVERT</p>
+      <h1>Rejoins la famille <span>O'Neil</span></h1>
+      <p>
+        Tu cherches une famille soudée pour vivre une vraie aventure
+        GTA RP ? Nous recherchons des joueurs motivés, respectueux
+        et prêts à s'investir dans notre histoire.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-icon">🤝</span>
+          <h3>Respect</h3>
+          <p>Respecter les membres, les autres joueurs et les règles du serveur.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-icon">🎭</span>
+          <h3>Roleplay</h3>
+          <p>Participer à des scènes cohérentes et contribuer à l'histoire collective.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-icon">🌲</span>
+          <h3>Motivation</h3>
+          <p>Avoir envie de s'impliquer et de faire évoluer la famille sur la durée.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="feature-card">
+        <p class="eyebrow">CANDIDATURE</p>
+        <h2>Présente-toi à la famille</h2>
+        <p>
+          Prépare une courte présentation : ton prénom RP, ton âge RP,
+          tes disponibilités, ton expérience RP et tes motivations.
+        </p>
+        <p>
+          Pour envoyer ta candidature, contacte le staff O'Neil
+          sur notre Discord.
+        </p>
+
+        <form id="recruitment-form">
+          <p>
+            <label for="rp-name">Nom de ton personnage RP</label><br>
+            <input id="rp-name" name="rp-name" type="text"
+              placeholder="Ex. : Tyler Collins" required>
+          </p>
+
+          <p>
+            <label for="rp-age">Âge du personnage</label><br>
+            <input id="rp-age" name="rp-age" type="number"
+              min="18" max="100" placeholder="Ex. : 21" required>
+          </p>
+
+          <p>
+            <label for="availability">Tes disponibilités</label><br>
+            <input id="availability" name="availability" type="text"
+              placeholder="Ex. : soirées et week-ends" required>
+          </p>
+
+          <p>
+            <label for="motivation">Tes motivations</label><br>
+            <textarea id="motivation" name="motivation" rows="5"
+              placeholder="Pourquoi souhaites-tu rejoindre les O'Neil ?" required></textarea>
+          </p>
+
+          <button class="button button-primary" type="submit">
+            Préparer ma candidature
+          </button>
+          <p id="form-result" aria-live="polite"></p>
+        </form>
+
+        <p class="form-note">
+          Important : ce formulaire prépare uniquement ta candidature
+          sur cette page. Il ne l'envoie pas automatiquement au staff.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="logo" href="index.html">O'NEIL <span>FAMILY</span></a>
+    <p>Site communautaire GTA RP · Univers fictif</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
